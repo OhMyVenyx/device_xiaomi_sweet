@@ -13,13 +13,10 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit common Evolution-X Stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Evolution-X Stuff
-EVO_BUILD_TYPE := OFFICIAL
+TARGET_USES_MINI_GAPPS := true
 
 PRODUCT_NAME := evolution_sweet
 PRODUCT_DEVICE := sweet
